@@ -10,3 +10,7 @@ from physarum_solver import physarum_solve
 x_sol = physarum_solve(A, b, c, step_size=0.5, max_iter=10)
 # x_sol is the solution to this LP and can be used in desired further processing
 ```
+
+Use our solver in the experiments reported in our paper:
+
+
