@@ -1,5 +1,5 @@
 # Physarum-Differentiable-LP-Layer
-This repository contains the reference code for our paper [Physarum Powered Differentiable Linear Programming Layers and Applications](https://ojs.aaai.org/index.php/AAAI/article/view/17081)
+This repository contains the reference code for our paper [Physarum Powered Differentiable Linear Programming Layers and Applications](https://ojs.aaai.org/index.php/AAAI/article/view/17081) (AAAI2021)
 
 ## Requirements
 * Python 3
