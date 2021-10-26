@@ -1,3 +1,6 @@
 [submodule "DMM_Net"]
 	path = DMM_Net
 	url = git@github.com:zihangm/DMM_Net.git
+[submodule "MetaOptNet"]
+	path = MetaOptNet
+	url = git@github.com:zihangm/MetaOptNet.git
