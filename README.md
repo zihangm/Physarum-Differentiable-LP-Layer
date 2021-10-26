@@ -21,7 +21,9 @@ cd ./DMM_Net
 ```
 Follow the instructions in ./DMM_Net to prepare the data and do the training/testing.
  
-(We replaced the original solver from DMM_Net which is customized for matching problem with our physarum solver which works for general LPs, including the matching problem as a special case. The replacement happens in 'DMM_Net/dmm/modules/submodules/relax_match.py')
+We replaced the original solver from DMM_Net which is customized for matching problem with our physarum solver which works for general LPs, including the matching problem as a special case. 
+
+The replacement happens in **DMM_Net/dmm/modules/submodules/relax_match.py**)
 
 
 To test the performance of our solver on randomly constructed LP problems and compare with the solver from DMM_Net:
@@ -36,7 +38,9 @@ cd ./MetaOptNet
 ```
 Follow the instructions in ./MetaOptNet to prepare the data and do the training/testing.
 
-(We replaced the original L-2 SVM solved using Optnet with our L-1 SVM solved using our physarum solver. The L-1 SVM and our physarum solver are used in './MetaOptNet/models/classification_heads_pairwise_physarum.py')
+We replaced the original L-2 SVM solved using Optnet with our L-1 SVM solved using our physarum solver. 
+
+The L-1 SVM and our physarum solver are used in **./MetaOptNet/models/classification_heads_pairwise_physarum.py**
 
 
 
