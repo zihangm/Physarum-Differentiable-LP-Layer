@@ -1,7 +1,11 @@
 # Physarum-Differentiable-LP-Layer
-Physarum Powered Differentiable Linear Programming Layers
+This repository contains the reference code for our paper [Physarum Powered Differentiable Linear Programming Layers and Applications](https://ojs.aaai.org/index.php/AAAI/article/view/17081)
 
-Usage:
+## Requirements
+* Python 3
+* PyTorch 1.1+
+
+## Use physarum solver to solve a given LP differentiably:
 ```python
 from physarum_solver import physarum_solve
 
@@ -11,6 +15,15 @@ x_sol = physarum_solve(A, b, c, step_size=0.5, max_iter=10)
 # x_sol is the solution to this LP and can be used in desired further processing
 ```
 
-Use our solver in the experiments reported in our paper:
+## Use physarum solver in video object segmentation ([DMM_Net](https://github.com/ZENGXH/DMM_Net)):
+Follow the instructions in ./DMM_Net to prepare the data and run the model. 
+(We replaced the original solver from DMM_Net which is customized for matching problem with our physarum solver which works for general LPs, including the matching problem as a special case. The replacement happens in 'DMM_Net/dmm/modules/submodules/relax_match.py')
+
+
+To test the performance of our solver on randomly constructed LP problems and compare with the solver from DMM_Net:
+```python
+cd DMM_Net/dmm/modules/submodules/
+python relax_match.py
+```
 
 
