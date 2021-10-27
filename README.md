@@ -23,7 +23,7 @@ Follow the instructions in ./DMM_Net to prepare the data and do the training/tes
  
 We replaced the original solver from DMM_Net which is customized for matching problem with our physarum solver which works for general LPs, including the matching problem as a special case. 
 
-The replacement happens in **DMM_Net/dmm/modules/submodules/relax_match.py**)
+The replacement happens in **DMM_Net/dmm/modules/submodules/relax_match.py**
 
 
 To test the performance of our solver on randomly constructed LP problems and compare with the solver from DMM_Net:
